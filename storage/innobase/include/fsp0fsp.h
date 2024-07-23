@@ -674,6 +674,7 @@ void fseg_print(fseg_header_t *header, /*!< in: segment header */
                 mtr_t *mtr);           /*!< in/out: mini-transaction */
 #endif                                 /* UNIV_BTR_PRINT */
 
+// ## ADDED CODE :- undo-optim-2 (should be commented) and uncomment the one fsp0types.h ##
 /** Check whether a space id is an undo tablespace ID
 Undo tablespaces have space_id's starting 1 less than the redo logs.
 They are numbered down from this.  Since rseg_id=0 always refers to the
@@ -683,6 +684,7 @@ is 127. The translation from an undo_space_num is:
 @param[in]      space_id        space id to check
 @return true if it is undo tablespace else false. */
 bool fsp_is_undo_tablespace(space_id_t space_id);
+// ## ADDED CODE :- undo-optim-2 ##
 
 static inline bool fsp_is_system_tablespace(space_id_t space_id) {
   return (space_id == TRX_SYS_SPACE);

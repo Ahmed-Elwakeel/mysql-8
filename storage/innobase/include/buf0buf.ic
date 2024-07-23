@@ -825,7 +825,31 @@ static inline buf_pool_t *buf_pool_get(const page_id_t &page_id) {
 
   page_id_t id(page_id.space(), ignored_page_no);
 
+  // ## ADDED CODE - undo-optim-2 ##
+  // ------- 2 for undo (exclusively) and rest for others
+  //  ulint  i = 0;
+  //  if(fsp_is_undo_tablespace(page_id.space())){
+  //    i = (id.hash() % 2) + (srv_buf_pool_instances - 2);
+  //  }else{
+  //    i = id.hash() % (srv_buf_pool_instances-2);
+  //  }
+  // ------- 1 for undo (exclusively) and rest for others
+  //   ulint  i = 0;
+  //   if(fsp_is_undo_tablespace(page_id.space())){
+  //     i = srv_buf_pool_instances-1;
+  //   }else{
+  //     i = id.hash() % (srv_buf_pool_instances-1);
+  //   }
+  //------- 7 and (1) only 1 for undo , all the buffers for all
+  //  ulint i = 0;
+  //  if (fsp_is_undo_tablespace(page_id.space())) {
+  //    i = srv_buf_pool_instances - 1;
+  //  } else {
+  //    i = id.hash() % srv_buf_pool_instances;
+  //  }
+  // on adding the changes, comment the below line
   ulint i = id.hash() % srv_buf_pool_instances;
+  //## ADDED CODE :- undo-optim-2 ##
 
   return (&buf_pool_ptr[i]);
 }
