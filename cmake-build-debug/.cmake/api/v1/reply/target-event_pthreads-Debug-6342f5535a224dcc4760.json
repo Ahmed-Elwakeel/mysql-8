@@ -1,0 +1,294 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "extra/libevent/libevent-2.1.11-stable/lib/libevent_pthreads.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE",
+			"add_definitions",
+			"include_directories",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"extra/libevent/libevent-2.1.11-stable/CMakeLists.txt",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1027,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1549,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1782,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 569,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1553,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1564,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 637,
+				"parent" : 2
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 88,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 85,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1552,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1551,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1550,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 987,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 950,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 1580,
+				"parent" : 2
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 1889,
+				"parent" : 2
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 220,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 124,
+				"parent" : 20
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g -fPIC -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-fvisibility=hidden"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_TLSv13"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "LZ4_DISABLE_DEPRECATE_WARNINGS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "MYSQL_PROJECT"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_GNU_SOURCE=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 16,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/extra/libevent/libevent-2.1.11-stable/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/compat"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/libs"
+				},
+				{
+					"backtrace" : 21,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libedit/libedit-20221030-3.1/src/editline"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "event_pthreads::@6a7956d454e45fb56c8c",
+	"name" : "event_pthreads",
+	"nameOnDisk" : "libevent_pthreads.a",
+	"paths" : 
+	{
+		"build" : "extra/libevent/libevent-2.1.11-stable",
+		"source" : "extra/libevent/libevent-2.1.11-stable"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "extra/libevent/libevent-2.1.11-stable/evthread_pthread.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

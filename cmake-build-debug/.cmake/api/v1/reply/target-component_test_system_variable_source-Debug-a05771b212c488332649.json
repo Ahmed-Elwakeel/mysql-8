@@ -1,0 +1,363 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugin_output_directory/component_test_system_variable_source.so"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"MYSQL_ADD_COMPONENT",
+			"INSTALL",
+			"MYSQL_INSTALL_TARGET",
+			"ADD_DEPENDENCIES",
+			"TARGET_COMPILE_OPTIONS",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"TARGET_COMPILE_DEFINITIONS",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/component.cmake",
+			"components/test/CMakeLists.txt",
+			"cmake/install_macros.cmake",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 116,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1549,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 1782,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 569,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1553,
+				"parent" : 7
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1564,
+				"parent" : 7
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 637,
+				"parent" : 7
+			},
+			{
+				"file" : 5,
+				"parent" : 14
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 88,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 85,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1552,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1551,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1550,
+				"parent" : 7
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 1580,
+				"parent" : 7
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 1918,
+				"parent" : 7
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 120,
+				"parent" : 22
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 110,
+				"parent" : 23
+			},
+			{
+				"command" : 14,
+				"file" : 3,
+				"line" : 1889,
+				"parent" : 7
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 220,
+				"parent" : 25
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 124,
+				"parent" : 26
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation -Wsuggest-override -Wmissing-include-dirs -Wextra-semi -Wlogical-op -Werror -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g -fPIC -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fvisibility=hidden"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_TLSv13"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "LZ4_DISABLE_DEPRECATE_WARNINGS"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "MYSQL_COMPONENT"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "MYSQL_PROJECT"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_LIMIT_MACROS"
+				},
+				{
+					"define" : "component_test_system_variable_source_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 21,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/include"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/libs"
+				},
+				{
+					"backtrace" : 24,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/protobuf/protobuf-3.19.4/src"
+				},
+				{
+					"backtrace" : 27,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libedit/libedit-20221030-3.1/src/editline"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "GenError::@d3b0ab015cfc9b043577"
+		}
+	],
+	"id" : "component_test_system_variable_source::@ce0ba1ce342bc938eff1",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "lib/plugin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local/mysql"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-rpath,'$$ORIGIN/../../private'",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "component_test_system_variable_source",
+	"nameOnDisk" : "component_test_system_variable_source.so",
+	"paths" : 
+	{
+		"build" : "components/test",
+		"source" : "components/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/test/test_system_variable_source.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

@@ -1,0 +1,1173 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_CUSTOM_TARGET",
+			"ADD_DEPENDENCIES",
+			"MYSQL_ADD_COMPONENT"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"cmake/component.cmake",
+			"components/logging/CMakeLists.txt",
+			"plugin/x/tests/components/CMakeLists.txt",
+			"components/audit_api_message_emit/CMakeLists.txt",
+			"components/example/CMakeLists.txt",
+			"components/keyrings/keyring_file/CMakeLists.txt",
+			"components/mysqlbackup/CMakeLists.txt",
+			"components/pfs_component/CMakeLists.txt",
+			"components/pfs_example/CMakeLists.txt",
+			"components/query_attributes/CMakeLists.txt",
+			"components/reference_cache/CMakeLists.txt",
+			"components/test/CMakeLists.txt",
+			"components/test_server_telemetry_metrics/CMakeLists.txt",
+			"components/test_server_telemetry_traces/CMakeLists.txt",
+			"components/validate_password/CMakeLists.txt",
+			"components/test/event_tracking_test/CMakeLists.txt",
+			"components/test/perfschema/CMakeLists.txt",
+			"components/test/table_access/CMakeLists.txt",
+			"components/test/udf_services/CMakeLists.txt",
+			"unittest/gunit/components/mysql_server/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2147,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 24,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 6
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 25,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 9
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 23,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 30,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 36,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 42,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 47,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 52,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 24
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 78,
+				"parent" : 26
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 27
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 23,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 29
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 27,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 40,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 33
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 25,
+				"parent" : 35
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 36
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 25,
+				"parent" : 38
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 39
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 25,
+				"parent" : 41
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 42
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 23,
+				"parent" : 44
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 45
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 23,
+				"parent" : 47
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 48
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 27,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 51
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 32,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 53
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 37,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 55
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 42,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 57
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 47,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 59
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 52,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 61
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 57,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 63
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 62,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 65
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 67,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 67
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 72,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 69
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 77,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 82,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 73
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 87,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 75
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 92,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 77
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 97,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 79
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 102,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 81
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 107,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 83
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 112,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 85
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 117,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 87
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 122,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 89
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 127,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 91
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 132,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 93
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 137,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 95
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 142,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 97
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 147,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 99
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 153,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 101
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 158,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 103
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 163,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 105
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 168,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 107
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 173,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 109
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 178,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 111
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 13,
+				"line" : 25,
+				"parent" : 113
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 114
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 14,
+				"line" : 25,
+				"parent" : 116
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 117
+			},
+			{
+				"file" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 15,
+				"line" : 23,
+				"parent" : 119
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 120
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 33,
+				"parent" : 122
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 123
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 39,
+				"parent" : 122
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 125
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 45,
+				"parent" : 122
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 127
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 51,
+				"parent" : 122
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 129
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 57,
+				"parent" : 122
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 131
+			},
+			{
+				"file" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 26,
+				"parent" : 133
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 134
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 32,
+				"parent" : 133
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 136
+			},
+			{
+				"file" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 18,
+				"line" : 26,
+				"parent" : 138
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 139
+			},
+			{
+				"file" : 19
+			},
+			{
+				"command" : 2,
+				"file" : 19,
+				"line" : 25,
+				"parent" : 141
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 142
+			},
+			{
+				"file" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 101,
+				"parent" : 144
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 145
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 106,
+				"parent" : 144
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 147
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 111,
+				"parent" : 144
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 149
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 116,
+				"parent" : 144
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 151
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "component_log_filter_dragnet::@d18f10c1d23ba84010c1"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "component_mysqlx_global_reset::@bcd6d1b7cd723ea2e2a3"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "component_audit_api_message_emit::@0ab8ac003d74006f8bf8"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "component_example_component1::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "component_example_component2::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "component_example_component3::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "component_test_string_service::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "component_test_string_service_long::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "component_test_string_service_charset::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "component_test_backup_lock_service::@237971921040229fd6e4"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "component_keyring_file::@87a32a907b672d360106"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "component_log_sink_syseventlog::@d18f10c1d23ba84010c1"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "component_log_sink_json::@d18f10c1d23ba84010c1"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "component_log_sink_test::@d18f10c1d23ba84010c1"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "component_mysqlbackup::@a135fe945b302204c461"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "component_pfs_example_component_population::@50d730a2baa7d59ed9e9"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "component_pfs_example::@2992a99228831cbc5bb1"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "component_query_attributes::@8385f3ddb8ae97270a24"
+		},
+		{
+			"backtrace" : 49,
+			"id" : "component_reference_cache::@2f22624c536546dd8373"
+		},
+		{
+			"backtrace" : 52,
+			"id" : "component_test_udf_registration::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 54,
+			"id" : "component_udf_reg_3_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 56,
+			"id" : "component_udf_reg_only_3_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 58,
+			"id" : "component_udf_unreg_3_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 60,
+			"id" : "component_udf_reg_int_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 62,
+			"id" : "component_udf_unreg_int_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 64,
+			"id" : "component_udf_reg_int_same_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 66,
+			"id" : "component_udf_reg_real_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 68,
+			"id" : "component_udf_unreg_real_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 70,
+			"id" : "component_udf_reg_avg_func::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 72,
+			"id" : "component_test_sys_var_service::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 74,
+			"id" : "component_test_sys_var_service_same::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 76,
+			"id" : "component_test_sys_var_service_int::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 78,
+			"id" : "component_test_sys_var_service_str::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 80,
+			"id" : "component_test_status_var_service::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 82,
+			"id" : "component_test_status_var_service_int::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 84,
+			"id" : "component_test_status_var_service_str::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 86,
+			"id" : "component_test_status_var_service_reg_only::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 88,
+			"id" : "component_test_status_var_service_unreg_only::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 90,
+			"id" : "component_test_system_variable_source::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 92,
+			"id" : "component_test_host_application_signal::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 94,
+			"id" : "component_test_audit_api_message::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 96,
+			"id" : "component_test_mysql_runtime_error::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 98,
+			"id" : "component_test_mysql_current_thread_reader::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 100,
+			"id" : "component_test_component_deinit::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 102,
+			"id" : "component_test_mysql_system_variable_set::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 104,
+			"id" : "component_test_sensitive_system_variables::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 106,
+			"id" : "component_test_mysql_command_services::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 108,
+			"id" : "component_test_status_var_reader::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 110,
+			"id" : "component_test_mysql_thd_store_service::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 112,
+			"id" : "component_test_event_tracking_consumer::@ce0ba1ce342bc938eff1"
+		},
+		{
+			"backtrace" : 115,
+			"id" : "component_test_server_telemetry_metrics::@5b2c5dad25cc775ad54c"
+		},
+		{
+			"backtrace" : 118,
+			"id" : "component_test_server_telemetry_traces::@0e1a63944ef237508397"
+		},
+		{
+			"backtrace" : 121,
+			"id" : "component_validate_password::@1cce1f3fcb0f6f01c494"
+		},
+		{
+			"backtrace" : 124,
+			"id" : "component_test_event_tracking_producer_a::@6c5515d4ea511f8e706f"
+		},
+		{
+			"backtrace" : 126,
+			"id" : "component_test_event_tracking_producer_b::@6c5515d4ea511f8e706f"
+		},
+		{
+			"backtrace" : 128,
+			"id" : "component_test_event_tracking_consumer_a::@6c5515d4ea511f8e706f"
+		},
+		{
+			"backtrace" : 130,
+			"id" : "component_test_event_tracking_consumer_b::@6c5515d4ea511f8e706f"
+		},
+		{
+			"backtrace" : 132,
+			"id" : "component_test_event_tracking_consumer_c::@6c5515d4ea511f8e706f"
+		},
+		{
+			"backtrace" : 135,
+			"id" : "component_test_pfs_resource_group::@87ab84adb8fcecf28670"
+		},
+		{
+			"backtrace" : 137,
+			"id" : "component_test_pfs_notification::@87ab84adb8fcecf28670"
+		},
+		{
+			"backtrace" : 140,
+			"id" : "component_test_table_access::@3e1cbb1fdc7dde41eeb8"
+		},
+		{
+			"backtrace" : 143,
+			"id" : "component_test_udf_services::@af372abe6d2525fe52af"
+		},
+		{
+			"backtrace" : 146,
+			"id" : "component_self_required_test_component::@9f50cc37595f4e609916"
+		},
+		{
+			"backtrace" : 148,
+			"id" : "component_cyclic_dependency_test_component_1::@9f50cc37595f4e609916"
+		},
+		{
+			"backtrace" : 150,
+			"id" : "component_cyclic_dependency_test_component_2::@9f50cc37595f4e609916"
+		},
+		{
+			"backtrace" : 152,
+			"id" : "component_test_reference_cache::@9f50cc37595f4e609916"
+		}
+	],
+	"id" : "component_all::@6890427a1f51a3e7e1df",
+	"name" : "component_all",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

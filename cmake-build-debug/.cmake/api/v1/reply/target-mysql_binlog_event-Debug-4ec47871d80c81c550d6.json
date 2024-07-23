@@ -1,0 +1,582 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libmysql_binlog_event.a"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_STATIC_LIBRARY",
+			"LIBS_MYSQL_CREATE_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEPENDENCIES",
+			"ADD_COMPILE_OPTIONS",
+			"ADD_WSHADOW_WARNING",
+			"TARGET_COMPILE_DEFINITIONS",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE",
+			"TARGET_SOURCES"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"cmake/libs_mysql_create_library.cmake",
+			"libs/mysql/binlog/event/CMakeLists.txt",
+			"cmake/maintainer.cmake",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 45,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 217,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 1
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1549,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 1782,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 569,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1553,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1564,
+				"parent" : 9
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 637,
+				"parent" : 9
+			},
+			{
+				"file" : 6,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 88,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 85,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1552,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1551,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 1550,
+				"parent" : 9
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 1580,
+				"parent" : 9
+			},
+			{
+				"command" : 13,
+				"file" : 4,
+				"line" : 1918,
+				"parent" : 9
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 120,
+				"parent" : 23
+			},
+			{
+				"command" : 11,
+				"file" : 7,
+				"line" : 110,
+				"parent" : 24
+			},
+			{
+				"command" : 15,
+				"file" : 4,
+				"line" : 1889,
+				"parent" : 9
+			},
+			{
+				"command" : 14,
+				"file" : 8,
+				"line" : 220,
+				"parent" : 26
+			},
+			{
+				"command" : 11,
+				"file" : 8,
+				"line" : 124,
+				"parent" : 27
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 91,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation -Wsuggest-override -Wmissing-include-dirs -Wextra-semi -Wlogical-op -Werror -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g -fPIC -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wshadow=local"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "BINLOG_EVENT_COMPRESSION_USE_ZSTD_bundled"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAVE_EXT_BACKTRACE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "HAVE_TLSv13"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "LZ4_DISABLE_DEPRECATE_WARNINGS"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "MYSQL_PROJECT"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 22,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/libs"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libbacktrace/include"
+				},
+				{
+					"backtrace" : 25,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/protobuf/protobuf-3.19.4/src"
+				},
+				{
+					"backtrace" : 28,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libedit/libedit-20221030-3.1/src/editline"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/zstd/zstd-1.5.5/lib"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/zlib/zlib-1.2.13"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/extra/zlib/zlib-1.2.13"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "backtrace::@72fe72e27e394ec41d76"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "zlib::@87126f0cd0d5f9a4d58a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "zstd::@4852f3e90c5b3a8fc4e8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mytime::@64e0e5023d60a36b555e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mysys::@64e0e5023d60a36b555e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mysql_serialization::@12971db6d226f924fbce"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mysql_gtid::@f9fa9af11edf2a8d66a6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "GenError::@d3b0ab015cfc9b043577"
+		}
+	],
+	"id" : "mysql_binlog_event::@4aac08aec16710209b08",
+	"name" : "mysql_binlog_event",
+	"nameOnDisk" : "libmysql_binlog_event.a",
+	"paths" : 
+	{
+		"build" : "libs/mysql/binlog/event",
+		"source" : "libs/mysql/binlog/event"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/codecs/binary.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/codecs/factory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/binary_log_funcs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/binlog_event.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/control_events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/event_reader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/load_data_events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/rows_event.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/statement_events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/trx_boundary_parser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/base.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/compressor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/decompress_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/decompressor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/factory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/none_comp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/none_dec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/payload_event_buffer_istream.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/zstd_comp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/zstd_dec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/buffer/grow_calculator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/buffer/grow_constraint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "libs/mysql/binlog/event/compression/buffer/grow_status.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

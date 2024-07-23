@@ -1,0 +1,362 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libzstd.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_DEFINITIONS",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"extra/zstd/CMakeLists.txt",
+			"CMakeLists.txt",
+			"cmake/os/Linux.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1549,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1553,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1564,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 87,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 106,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 3
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 88,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 85,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1552,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1551,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1550,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 1580,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "zstd_objlib::@4852f3e90c5b3a8fc4e8"
+		}
+	],
+	"id" : "zstd::@4852f3e90c5b3a8fc4e8",
+	"name" : "zstd",
+	"nameOnDisk" : "libzstd.a",
+	"paths" : 
+	{
+		"build" : "extra/zstd",
+		"source" : "extra/zstd"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/debug.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/entropy_common.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/error_private.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/fse_decompress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/pool.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/threading.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/xxhash.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/common/zstd_common.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/fse_compress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/hist.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/huf_compress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_compress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_compress_literals.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_compress_sequences.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_compress_superblock.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_double_fast.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_fast.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_lazy.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_ldm.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstdmt_compress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/compress/zstd_opt.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/decompress/huf_decompress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/decompress/zstd_ddict.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/decompress/zstd_decompress_block.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/decompress/zstd_decompress.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/dictBuilder/cover.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/dictBuilder/divsufsort.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/dictBuilder/fastcover.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/dictBuilder/zdict.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/zstd/CMakeFiles/zstd_objlib.dir/zstd-1.5.5/lib/decompress/huf_decompress_amd64.S.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

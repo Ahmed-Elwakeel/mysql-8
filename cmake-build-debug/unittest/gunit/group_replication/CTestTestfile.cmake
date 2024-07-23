@@ -1,0 +1,18 @@
+# CMake generated Testfile for 
+# Source directory: /home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication
+# Build directory: /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/unittest/gunit/group_replication
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(group_replication_member_info "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_member_info-t")
+set_tests_properties(group_replication_member_info PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")
+add_test(group_replication_compatibility_module "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_compatibility_module-t")
+set_tests_properties(group_replication_compatibility_module PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")
+add_test(group_replication_member_version "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_member_version-t")
+set_tests_properties(group_replication_member_version PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")
+add_test(group_replication_mysql_version_gcs_protocol_map "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_mysql_version_gcs_protocol_map-t")
+set_tests_properties(group_replication_mysql_version_gcs_protocol_map PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")
+add_test(group_replication_gcs_mysql_network_provider "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_gcs_mysql_network_provider-t")
+set_tests_properties(group_replication_gcs_mysql_network_provider PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")
+add_test(group_replication_certifier_auto "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/runtime_output_directory/group_replication_certifier_auto-t")
+set_tests_properties(group_replication_certifier_auto PROPERTIES  _BACKTRACE_TRIPLES "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake/mysql_add_executable.cmake;199;ADD_TEST;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;45;MYSQL_ADD_EXECUTABLE;/home/ahmedelwakeel/new_msql/mysql-8.3.0/unittest/gunit/group_replication/CMakeLists.txt;0;")

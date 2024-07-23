@@ -1,0 +1,500 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "runtime_output_directory/keyring_common_cache-t"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"MYSQL_ADD_EXECUTABLE",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_COMPILE_OPTIONS",
+			"ADD_WSHADOW_WARNING",
+			"TARGET_COMPILE_OPTIONS",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/mysql_add_executable.cmake",
+			"unittest/gunit/components/keyring_common/CMakeLists.txt",
+			"cmake/libutils.cmake",
+			"components/keyrings/common/CMakeLists.txt",
+			"cmake/maintainer.cmake",
+			"unittest/CMakeLists.txt",
+			"unittest/gunit/CMakeLists.txt",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 1
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 53,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 239,
+				"parent" : 5
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 23,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 217,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 1
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 105,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 104,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 103,
+				"parent" : 11
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1549,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 1782,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 569,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1553,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1564,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 7,
+				"line" : 637,
+				"parent" : 15
+			},
+			{
+				"file" : 9,
+				"parent" : 21
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 88,
+				"parent" : 22
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 85,
+				"parent" : 22
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1552,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1551,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 1550,
+				"parent" : 15
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 1580,
+				"parent" : 15
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 1918,
+				"parent" : 15
+			},
+			{
+				"command" : 11,
+				"file" : 10,
+				"line" : 120,
+				"parent" : 29
+			},
+			{
+				"command" : 10,
+				"file" : 10,
+				"line" : 110,
+				"parent" : 30
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 1889,
+				"parent" : 15
+			},
+			{
+				"command" : 13,
+				"file" : 11,
+				"line" : 220,
+				"parent" : 32
+			},
+			{
+				"command" : 10,
+				"file" : 11,
+				"line" : 124,
+				"parent" : 33
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 34,
+				"parent" : 11
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation  -Wmissing-include-dirs -Wextra-semi -Wlogical-op -Werror -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g -fPIE -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wshadow=local"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-fvisibility=hidden"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 12,
+					"define" : "DATA_DIR=\"/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/unittest/gunit\""
+				},
+				{
+					"backtrace" : 13,
+					"define" : "ERRMSG_DIR=\"/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/share\""
+				},
+				{
+					"backtrace" : 14,
+					"define" : "EXTRA_CODE_FOR_UNIT_TESTING"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "HAVE_TLSv13"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "LZ4_DISABLE_DEPRECATE_WARNINGS"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "MYSQL_PROJECT"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "MYSQL_SERVER"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "RAPIDJSON_NO_SIZETYPEDEFINE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "RAPIDJSON_SCHEMA_USE_INTERNALREGEX=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "RAPIDJSON_SCHEMA_USE_STDREGEX=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "__STDC_LIMIT_MACROS"
+				},
+				{
+					"define" : "keyring_common_cache_t_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 28,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/libs"
+				},
+				{
+					"backtrace" : 31,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/protobuf/protobuf-3.19.4/src"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libedit/libedit-20221030-3.1/src/editline"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/googletest/googletest-release-1.12.0/googlemock"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/googletest/googletest-release-1.12.0/googlemock/include"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/googletest/googletest-release-1.12.0/googletest"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/googletest/googletest-release-1.12.0/googletest/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/rapidjson/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "gmock::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "gtest::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "gtest_main::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "keyring_common::@321230cdf7d699f1b680"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "library_mysys::@a30eff1065bb5d262078"
+		}
+	],
+	"id" : "keyring_common_cache-t::@1f0d9a2faa96150b1011",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-std=c++20 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation  -Wmissing-include-dirs -Wextra-semi -Wlogical-op -Werror -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--export-dynamic -rdynamic  -Wl,--build-id=sha1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "archive_output_directory/libkeyring_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libgmock.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "components/library_mysys/liblibrary_mysys.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "keyring_common_cache-t",
+	"nameOnDisk" : "keyring_common_cache-t",
+	"paths" : 
+	{
+		"build" : "unittest/gunit/components/keyring_common",
+		"source" : "unittest/gunit/components/keyring_common"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "unittest/gunit/components/keyring_common/cache-t.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

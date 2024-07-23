@@ -1,0 +1,328 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libndbmgmapi.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"storage/ndb/src/mgmapi/CMakeLists.txt",
+			"CMakeLists.txt",
+			"storage/ndb/ndb_configure.cmake",
+			"storage/ndb/CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1549,
+				"parent" : 4
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 174,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 243,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1782,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 569,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1553,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1564,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 4
+			},
+			{
+				"file" : 6,
+				"parent" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 88,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 85,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1552,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1551,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1550,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 1580,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 176,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 1918,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 120,
+				"parent" : 25
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 110,
+				"parent" : 26
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1889,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 220,
+				"parent" : 28
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 124,
+				"parent" : 29
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "backtrace::@72fe72e27e394ec41d76"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "zlib::@87126f0cd0d5f9a4d58a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "zstd::@4852f3e90c5b3a8fc4e8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mytime::@64e0e5023d60a36b555e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mysys::@64e0e5023d60a36b555e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ndbportlib::@0b8a6e12c429ce8f212b"
+		},
+		{
+			"id" : "ndbtrace_objlib::@96152ebdcfcfcb35c58e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "ndbsignaldata::@2d1b8b442280d7ac2ece"
+		},
+		{
+			"id" : "ndbgeneral_objlib::@5828f8ae88ebb712709f"
+		},
+		{
+			"id" : "ndblogger_objlib::@cac1560275605e0803c6"
+		},
+		{
+			"id" : "ndbmgmcommon_objlib::@ac875bbe8547e1da2154"
+		},
+		{
+			"id" : "ndbmgmapi_objlib::@1b57032911eae5d65f0f"
+		}
+	],
+	"id" : "ndbmgmapi::@1b57032911eae5d65f0f",
+	"name" : "ndbmgmapi",
+	"nameOnDisk" : "libndbmgmapi.a",
+	"paths" : 
+	{
+		"build" : "storage/ndb/src/mgmapi",
+		"source" : "storage/ndb/src/mgmapi"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/mgmapi.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/mgmapi_error.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/ndb_logevent.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/mgmapi_configuration.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/LocalConfig.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/mgmapi/CMakeFiles/ndbmgmapi_objlib.dir/ndbd_exit_codes.cpp.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

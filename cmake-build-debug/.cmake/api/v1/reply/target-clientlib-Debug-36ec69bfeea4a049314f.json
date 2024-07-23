@@ -1,0 +1,320 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libclientlib.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_COMPILE_OPTIONS",
+			"ADD_WSHADOW_WARNING",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"libmysql/CMakeLists.txt",
+			"cmake/maintainer.cmake",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 227,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 217,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1549,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 1782,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 569,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1553,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1564,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 637,
+				"parent" : 6
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 88,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 85,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1552,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1551,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 1550,
+				"parent" : 6
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 1580,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 3,
+				"line" : 1918,
+				"parent" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 120,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 110,
+				"parent" : 21
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 1889,
+				"parent" : 6
+			},
+			{
+				"command" : 11,
+				"file" : 7,
+				"line" : 220,
+				"parent" : 23
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 124,
+				"parent" : 24
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "zlib::@87126f0cd0d5f9a4d58a"
+		},
+		{
+			"id" : "clientlib_objlib::@804198ce8b9bd67f3a0d"
+		}
+	],
+	"id" : "clientlib::@804198ce8b9bd67f3a0d",
+	"name" : "clientlib",
+	"nameOnDisk" : "libclientlib.a",
+	"paths" : 
+	{
+		"build" : "libmysql",
+		"source" : "libmysql"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/libmysql.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/errmsg.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/dns_srv.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/client.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/client_plugin.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/client_authentication.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/compression.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/get_password.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/net_serv.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/bind_params.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql/auth/password.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql/auth/sha2_password_common.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/__/sql-common/mysql_native_authentication_client.cc.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/libmysql/CMakeFiles/clientlib_objlib.dir/mysql_trace.cc.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

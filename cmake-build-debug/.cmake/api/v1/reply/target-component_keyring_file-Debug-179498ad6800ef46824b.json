@@ -1,0 +1,533 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugin_output_directory/component_keyring_file.so"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"MYSQL_ADD_COMPONENT",
+			"INSTALL",
+			"MYSQL_INSTALL_TARGET",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_DEPENDENCIES",
+			"TARGET_COMPILE_OPTIONS",
+			"ADD_DEFINITIONS",
+			"MYSQL_CHECK_SSL",
+			"TARGET_COMPILE_DEFINITIONS",
+			"INCLUDE",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/component.cmake",
+			"components/keyrings/keyring_file/CMakeLists.txt",
+			"cmake/install_macros.cmake",
+			"cmake/libutils.cmake",
+			"components/keyrings/common/CMakeLists.txt",
+			"CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 116,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 1
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 53,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 239,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 1
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1549,
+				"parent" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 1782,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 569,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1553,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1564,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 637,
+				"parent" : 11
+			},
+			{
+				"file" : 7,
+				"parent" : 19
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 88,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 85,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1552,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1551,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 1550,
+				"parent" : 11
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 1580,
+				"parent" : 11
+			},
+			{
+				"command" : 12,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 14,
+				"file" : 5,
+				"line" : 1918,
+				"parent" : 11
+			},
+			{
+				"command" : 13,
+				"file" : 8,
+				"line" : 120,
+				"parent" : 28
+			},
+			{
+				"command" : 12,
+				"file" : 8,
+				"line" : 110,
+				"parent" : 29
+			},
+			{
+				"command" : 16,
+				"file" : 5,
+				"line" : 1889,
+				"parent" : 11
+			},
+			{
+				"command" : 15,
+				"file" : 9,
+				"line" : 220,
+				"parent" : 31
+			},
+			{
+				"command" : 12,
+				"file" : 9,
+				"line" : 124,
+				"parent" : 32
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++20 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation -Wsuggest-override -Wmissing-include-dirs -Wextra-semi -Wlogical-op -Werror -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g -fPIC -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-fvisibility=hidden"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 12,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "HAVE_TLSv13"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "LOG_COMPONENT_TAG=\"component_keyring_file\""
+				},
+				{
+					"backtrace" : 16,
+					"define" : "LZ4_DISABLE_DEPRECATE_WARNINGS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "MYSQL_COMPONENT"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "MYSQL_PROJECT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "RAPIDJSON_NO_SIZETYPEDEFINE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "RAPIDJSON_SCHEMA_USE_INTERNALREGEX=0"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "RAPIDJSON_SCHEMA_USE_STDREGEX=1"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "_FILE_OFFSET_BITS=64"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "__STDC_LIMIT_MACROS"
+				},
+				{
+					"define" : "component_keyring_file_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 26,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/libs"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/components/keyrings/keyring_file"
+				},
+				{
+					"backtrace" : 30,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/protobuf/protobuf-3.19.4/src"
+				},
+				{
+					"backtrace" : 33,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libedit/libedit-20221030-3.1/src/editline"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/rapidjson/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "keyring_common::@321230cdf7d699f1b680"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "library_mysys::@a30eff1065bb5d262078"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "GenError::@d3b0ab015cfc9b043577"
+		}
+	],
+	"id" : "component_keyring_file::@87a32a907b672d360106",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "lib/plugin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local/mysql"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wl,-rpath,'$$ORIGIN/../../private'",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "archive_output_directory/libkeyring_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "components/library_mysys/liblibrary_mysys.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "component_keyring_file",
+	"nameOnDisk" : "component_keyring_file.so",
+	"paths" : 
+	{
+		"build" : "components/keyrings/keyring_file",
+		"source" : "components/keyrings/keyring_file"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_encryption_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_generator_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_load_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_keys_metadata_iterator_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_metadata_query_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_reader_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/service_implementation/keyring_writer_service_definition.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/backend/backend.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/config/config.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/keyring_file.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "components/keyrings/keyring_file/component_callbacks.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

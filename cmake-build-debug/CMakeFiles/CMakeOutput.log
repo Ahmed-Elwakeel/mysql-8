@@ -1,0 +1,387 @@
+Determining if the function epoll_create exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_aa2c1
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_create -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_aa2c1.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_create  CMakeFiles/cmTC_aa2c1.dir/CheckFunctionExistsEx.c.o -o cmTC_aa2c1  -lm && :
+
+
+
+Determining if the function epoll_ctl exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_ecc6b
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_ctl -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_ecc6b.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_ctl  CMakeFiles/cmTC_ecc6b.dir/CheckFunctionExistsEx.c.o -o cmTC_ecc6b  -lm && :
+
+
+
+Determining if the function eventfd exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_b7510
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=eventfd -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_b7510.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=eventfd  CMakeFiles/cmTC_b7510.dir/CheckFunctionExistsEx.c.o -o cmTC_b7510  -lm && :
+
+
+
+Determining if the function clock_gettime exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_e0b91
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=clock_gettime -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_e0b91.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=clock_gettime  CMakeFiles/cmTC_e0b91.dir/CheckFunctionExistsEx.c.o -o cmTC_e0b91  -lm && :
+
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_18618
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=fcntl -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_18618.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=fcntl  CMakeFiles/cmTC_18618.dir/CheckFunctionExistsEx.c.o -o cmTC_18618  -lm && :
+
+
+
+Determining if the function getaddrinfo exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_488e1
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getaddrinfo -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_488e1.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getaddrinfo  CMakeFiles/cmTC_488e1.dir/CheckFunctionExistsEx.c.o -o cmTC_488e1  -lm && :
+
+
+
+Determining if the function getnameinfo exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_0c68c
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getnameinfo -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_0c68c.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getnameinfo  CMakeFiles/cmTC_0c68c.dir/CheckFunctionExistsEx.c.o -o cmTC_0c68c  -lm && :
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_2c44b
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=gettimeofday -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_2c44b.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=gettimeofday  CMakeFiles/cmTC_2c44b.dir/CheckFunctionExistsEx.c.o -o cmTC_2c44b  -lm && :
+
+
+
+Determining if the function getprotobynumber exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_2c2db
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getprotobynumber -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_2c2db.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getprotobynumber  CMakeFiles/cmTC_2c2db.dir/CheckFunctionExistsEx.c.o -o cmTC_2c2db  -lm && :
+
+
+
+Determining if the function getservbyname exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_d67ff
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getservbyname -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_d67ff.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getservbyname  CMakeFiles/cmTC_d67ff.dir/CheckFunctionExistsEx.c.o -o cmTC_d67ff  -lm && :
+
+
+
+Determining if the function inet_ntop exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_19ff6
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=inet_ntop -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_19ff6.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=inet_ntop  CMakeFiles/cmTC_19ff6.dir/CheckFunctionExistsEx.c.o -o cmTC_19ff6  -lm && :
+
+
+
+Determining if the function inet_pton exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_f5765
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=inet_pton -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_f5765.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=inet_pton  CMakeFiles/cmTC_f5765.dir/CheckFunctionExistsEx.c.o -o cmTC_f5765  -lm && :
+
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_18d4f
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=mmap -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_18d4f.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=mmap  CMakeFiles/cmTC_18d4f.dir/CheckFunctionExistsEx.c.o -o cmTC_18d4f  -lm && :
+
+
+
+Determining if the function pipe exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_0e8ef
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pipe -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_0e8ef.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pipe  CMakeFiles/cmTC_0e8ef.dir/CheckFunctionExistsEx.c.o -o cmTC_0e8ef  -lm && :
+
+
+
+Determining if the function pipe2 exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_94cae
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pipe2 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_94cae.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pipe2  CMakeFiles/cmTC_94cae.dir/CheckFunctionExistsEx.c.o -o cmTC_94cae  -lm && :
+
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_5b9f2
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=poll -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_5b9f2.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=poll  CMakeFiles/cmTC_5b9f2.dir/CheckFunctionExistsEx.c.o -o cmTC_5b9f2  -lm && :
+
+
+
+Determining if the function sendfile exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_c24b5
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sendfile -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_c24b5.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sendfile  CMakeFiles/cmTC_c24b5.dir/CheckFunctionExistsEx.c.o -o cmTC_c24b5  -lm && :
+
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_fbd8c
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sigaction -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_fbd8c.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sigaction  CMakeFiles/cmTC_fbd8c.dir/CheckFunctionExistsEx.c.o -o cmTC_fbd8c  -lm && :
+
+
+
+Determining if the function signal exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_ff7e6
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=signal -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_ff7e6.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=signal  CMakeFiles/cmTC_ff7e6.dir/CheckFunctionExistsEx.c.o -o cmTC_ff7e6  -lm && :
+
+
+
+Determining if the function splice exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_97f2a
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=splice -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_97f2a.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=splice  CMakeFiles/cmTC_97f2a.dir/CheckFunctionExistsEx.c.o -o cmTC_97f2a  -lm && :
+
+
+
+Determining if the function strlcpy exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_01d2b
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strlcpy -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_01d2b.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strlcpy  CMakeFiles/cmTC_01d2b.dir/CheckFunctionExistsEx.c.o -o cmTC_01d2b  -lm && :
+
+
+
+Determining if the function strsep exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_bee97
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strsep -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_bee97.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strsep  CMakeFiles/cmTC_bee97.dir/CheckFunctionExistsEx.c.o -o cmTC_bee97  -lm && :
+
+
+
+Determining if the function strtok_r exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_3c205
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strtok_r -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_3c205.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strtok_r  CMakeFiles/cmTC_3c205.dir/CheckFunctionExistsEx.c.o -o cmTC_3c205  -lm && :
+
+
+
+Determining if the function strtoll exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_d17ea
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strtoll -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_d17ea.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=strtoll  CMakeFiles/cmTC_d17ea.dir/CheckFunctionExistsEx.c.o -o cmTC_d17ea  -lm && :
+
+
+
+Determining if the function vasprintf exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_a0167
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=vasprintf -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_a0167.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=vasprintf  CMakeFiles/cmTC_a0167.dir/CheckFunctionExistsEx.c.o -o cmTC_a0167  -lm && :
+
+
+
+Determining if the function accept4 exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_dfae7
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=accept4 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_dfae7.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=accept4  CMakeFiles/cmTC_dfae7.dir/CheckFunctionExistsEx.c.o -o cmTC_dfae7  -lm && :
+
+
+
+Determining if the function arc4random exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_d8f8a
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=arc4random -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_d8f8a.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=arc4random  CMakeFiles/cmTC_d8f8a.dir/CheckFunctionExistsEx.c.o -o cmTC_d8f8a  -lm && :
+
+
+
+Determining if the function arc4random_buf exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_50df1
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=arc4random_buf -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_50df1.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=arc4random_buf  CMakeFiles/cmTC_50df1.dir/CheckFunctionExistsEx.c.o -o cmTC_50df1  -lm && :
+
+
+
+Determining if the function epoll_create1 exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_4f2c9
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_create1 -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_4f2c9.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=epoll_create1  CMakeFiles/cmTC_4f2c9.dir/CheckFunctionExistsEx.c.o -o cmTC_4f2c9  -lm && :
+
+
+
+Determining if the function getegid exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_a47c1
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getegid -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_a47c1.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getegid  CMakeFiles/cmTC_a47c1.dir/CheckFunctionExistsEx.c.o -o cmTC_a47c1  -lm && :
+
+
+
+Determining if the function geteuid exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_91b83
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=geteuid -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_91b83.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=geteuid  CMakeFiles/cmTC_91b83.dir/CheckFunctionExistsEx.c.o -o cmTC_91b83  -lm && :
+
+
+
+Determining if the function getifaddrs exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_42f70
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getifaddrs -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_42f70.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=getifaddrs  CMakeFiles/cmTC_42f70.dir/CheckFunctionExistsEx.c.o -o cmTC_42f70  -lm && :
+
+
+
+Determining if the function nanosleep exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_53974
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=nanosleep -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_53974.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=nanosleep  CMakeFiles/cmTC_53974.dir/CheckFunctionExistsEx.c.o -o cmTC_53974  -lm && :
+
+
+
+Determining if the function usleep exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_ff53c
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=usleep -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_ff53c.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=usleep  CMakeFiles/cmTC_ff53c.dir/CheckFunctionExistsEx.c.o -o cmTC_ff53c  -lm && :
+
+
+
+Determining if the function timerfd_create exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_e7244
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerfd_create -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_e7244.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerfd_create  CMakeFiles/cmTC_e7244.dir/CheckFunctionExistsEx.c.o -o cmTC_e7244  -lm && :
+
+
+
+Determining if the function putenv exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_8ee6c
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=putenv -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_8ee6c.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=putenv  CMakeFiles/cmTC_8ee6c.dir/CheckFunctionExistsEx.c.o -o cmTC_8ee6c  -lm && :
+
+
+
+Determining if the function setenv exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_89d3a
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=setenv -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_89d3a.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=setenv  CMakeFiles/cmTC_89d3a.dir/CheckFunctionExistsEx.c.o -o cmTC_89d3a  -lm && :
+
+
+
+Determining if the function setrlimit exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_61113
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=setrlimit -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_61113.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=setrlimit  CMakeFiles/cmTC_61113.dir/CheckFunctionExistsEx.c.o -o cmTC_61113  -lm && :
+
+
+
+Determining if the function umask exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_90af1
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=umask -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_90af1.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=umask  CMakeFiles/cmTC_90af1.dir/CheckFunctionExistsEx.c.o -o cmTC_90af1  -lm && :
+
+
+
+Determining if the function unsetenv exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_2ef17
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=unsetenv -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_2ef17.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=unsetenv  CMakeFiles/cmTC_2ef17.dir/CheckFunctionExistsEx.c.o -o cmTC_2ef17  -lm && :
+
+
+
+Determining if the function gethostbyname_r exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_4ef30
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=gethostbyname_r -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_4ef30.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=gethostbyname_r  CMakeFiles/cmTC_4ef30.dir/CheckFunctionExistsEx.c.o -o cmTC_4ef30  -lm && :
+
+
+
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_6_ARG passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_faddd
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_faddd.dir/CheckPrototypeDefinition.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  CMakeFiles/cmTC_faddd.dir/CheckPrototypeDefinition.c.o -o cmTC_faddd  -lm && :
+
+
+
+Determining if the function select exists passed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_a3be8
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=select -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_a3be8.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=select  CMakeFiles/cmTC_a3be8.dir/CheckFunctionExistsEx.c.o -o cmTC_a3be8  -lm && :
+
+
+

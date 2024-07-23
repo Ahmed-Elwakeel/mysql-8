@@ -1,0 +1,121 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL",
+			"INSTALL_PRIVATE_LIBRARY",
+			"include"
+		],
+		"files" : 
+		[
+			"cmake/install_macros.cmake",
+			"extra/protobuf/protobuf-3.19.4/cmake/libprotobuf-lite.cmake",
+			"extra/protobuf/protobuf-3.19.4/cmake/CMakeLists.txt",
+			"extra/protobuf/protobuf-3.19.4/cmake/libprotobuf.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 276,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 155,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 316,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 163,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 277,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 170,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 316,
+				"parent" : 8
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 4,
+			"component" : "SharedLibraries",
+			"destination" : "lib/private",
+			"paths" : 
+			[
+				"library_output_directory/libprotobuf-lite.so.3.19.4"
+			],
+			"targetId" : "libprotobuf-lite::@ae262fda5401c4b9683d",
+			"targetIndex" : 403,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Router",
+			"destination" : "lib/mysqlrouter/private",
+			"paths" : 
+			[
+				"library_output_directory/libprotobuf-lite.so.3.19.4"
+			],
+			"targetId" : "libprotobuf-lite::@ae262fda5401c4b9683d",
+			"targetIndex" : 403,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "SharedLibraries",
+			"destination" : "lib/private",
+			"paths" : 
+			[
+				"library_output_directory/libprotobuf.so.3.19.4"
+			],
+			"targetId" : "libprotobuf::@ae262fda5401c4b9683d",
+			"targetIndex" : 402,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "extra/protobuf/protobuf-3.19.4/cmake",
+		"source" : "extra/protobuf/protobuf-3.19.4/cmake"
+	}
+}

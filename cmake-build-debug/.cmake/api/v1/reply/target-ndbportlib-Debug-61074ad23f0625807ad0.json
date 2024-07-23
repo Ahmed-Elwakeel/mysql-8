@@ -1,0 +1,421 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libndbportlib.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"ADD_DEFINITIONS",
+			"INCLUDE",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"storage/ndb/src/common/portlib/CMakeLists.txt",
+			"CMakeLists.txt",
+			"storage/ndb/ndb_configure.cmake",
+			"storage/ndb/CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1549,
+				"parent" : 4
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 174,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 243,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1782,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 569,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1553,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1564,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 4
+			},
+			{
+				"file" : 6,
+				"parent" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 88,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 85,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1552,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1551,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1550,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 1580,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 176,
+				"parent" : 6
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 1918,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 120,
+				"parent" : 24
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 110,
+				"parent" : 25
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1889,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 220,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 124,
+				"parent" : 28
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "backtrace::@72fe72e27e394ec41d76"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "zlib::@87126f0cd0d5f9a4d58a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "zstd::@4852f3e90c5b3a8fc4e8"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@89d0016ae4e25e06fd39"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mytime::@64e0e5023d60a36b555e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mysys::@64e0e5023d60a36b555e"
+		},
+		{
+			"id" : "ndbportlib_objlib::@0b8a6e12c429ce8f212b"
+		}
+	],
+	"id" : "ndbportlib::@0b8a6e12c429ce8f212b",
+	"name" : "ndbportlib",
+	"nameOnDisk" : "libndbportlib.a",
+	"paths" : 
+	{
+		"build" : "storage/ndb/src/common/portlib",
+		"source" : "storage/ndb/src/common/portlib"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbCondition.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbMutex.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbEnv.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbThread.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbHost.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbHW.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbTCP.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbMem.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbConfig.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbTick.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbDir.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_daemon.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_file_common.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_password.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_sockaddr.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_socket_poller.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_socketpair.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_stacktrace.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/ndb_file_posix.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbNuma.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbGetRUsage.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbLockCpuUtil.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/portlib/CMakeFiles/ndbportlib_objlib.dir/NdbSpin.cpp.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

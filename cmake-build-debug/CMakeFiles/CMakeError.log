@@ -1,0 +1,252 @@
+Determining if the function kqueue exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_59f6e
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=kqueue -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_59f6e.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=kqueue  CMakeFiles/cmTC_59f6e.dir/CheckFunctionExistsEx.c.o -o cmTC_59f6e  -lm && :
+FAILED: cmTC_59f6e 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=kqueue  CMakeFiles/cmTC_59f6e.dir/CheckFunctionExistsEx.c.o -o cmTC_59f6e  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_59f6e.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `kqueue'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function port_create exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_48734
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=port_create -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_48734.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=port_create  CMakeFiles/cmTC_48734.dir/CheckFunctionExistsEx.c.o -o cmTC_48734  -lm && :
+FAILED: cmTC_48734 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=port_create  CMakeFiles/cmTC_48734.dir/CheckFunctionExistsEx.c.o -o cmTC_48734  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_48734.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `port_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function sysctl exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_b7883
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sysctl -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_b7883.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sysctl  CMakeFiles/cmTC_b7883.dir/CheckFunctionExistsEx.c.o -o cmTC_b7883  -lm && :
+FAILED: cmTC_b7883 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=sysctl  CMakeFiles/cmTC_b7883.dir/CheckFunctionExistsEx.c.o -o cmTC_b7883  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_b7883.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `sysctl'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function issetugid exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_f3e2f
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=issetugid -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_f3e2f.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=issetugid  CMakeFiles/cmTC_f3e2f.dir/CheckFunctionExistsEx.c.o -o cmTC_f3e2f  -lm && :
+FAILED: cmTC_f3e2f 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=issetugid  CMakeFiles/cmTC_f3e2f.dir/CheckFunctionExistsEx.c.o -o cmTC_f3e2f  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_f3e2f.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `issetugid'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_384e8
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=mach_absolute_time -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_384e8.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=mach_absolute_time  CMakeFiles/cmTC_384e8.dir/CheckFunctionExistsEx.c.o -o cmTC_384e8  -lm && :
+FAILED: cmTC_384e8 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=mach_absolute_time  CMakeFiles/cmTC_384e8.dir/CheckFunctionExistsEx.c.o -o cmTC_384e8  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_384e8.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `mach_absolute_time'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function timeradd exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_4d5bc
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timeradd -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_4d5bc.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timeradd  CMakeFiles/cmTC_4d5bc.dir/CheckFunctionExistsEx.c.o -o cmTC_4d5bc  -lm && :
+FAILED: cmTC_4d5bc 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timeradd  CMakeFiles/cmTC_4d5bc.dir/CheckFunctionExistsEx.c.o -o cmTC_4d5bc  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_4d5bc.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `timeradd'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function timerclear exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_1e339
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerclear -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_1e339.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerclear  CMakeFiles/cmTC_1e339.dir/CheckFunctionExistsEx.c.o -o cmTC_1e339  -lm && :
+FAILED: cmTC_1e339 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerclear  CMakeFiles/cmTC_1e339.dir/CheckFunctionExistsEx.c.o -o cmTC_1e339  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_1e339.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `timerclear'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function timercmp exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_fab51
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timercmp -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_fab51.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timercmp  CMakeFiles/cmTC_fab51.dir/CheckFunctionExistsEx.c.o -o cmTC_fab51  -lm && :
+FAILED: cmTC_fab51 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timercmp  CMakeFiles/cmTC_fab51.dir/CheckFunctionExistsEx.c.o -o cmTC_fab51  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_fab51.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `timercmp'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function timerisset exists failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_876f8
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerisset -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_876f8.dir/CheckFunctionExistsEx.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/extra/libevent/libevent-2.1.11-stable/cmake/CheckFunctionExistsEx.c
+[2/2] : && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerisset  CMakeFiles/cmTC_876f8.dir/CheckFunctionExistsEx.c.o -o cmTC_876f8  -lm && :
+FAILED: cmTC_876f8 
+: && /usr/bin/cc -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=timerisset  CMakeFiles/cmTC_876f8.dir/CheckFunctionExistsEx.c.o -o cmTC_876f8  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_876f8.dir/CheckFunctionExistsEx.c.o: in function `main':
+CheckFunctionExistsEx.c:(.text+0x14): undefined reference to `timerisset'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_3_ARG failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_8e3cc
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_8e3cc.dir/CheckPrototypeDefinition.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+FAILED: CMakeFiles/cmTC_8e3cc.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_8e3cc.dir/CheckPrototypeDefinition.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:66: warning: ‘struct hostent_data’ declared inside parameter list will not be visible outside of this definition or declaration
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |                                                                  ^~~~~~~~~~~~
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:5: error: conflicting types for ‘gethostbyname_r’; have ‘int(const char *, struct hostent *, struct hostent_data *)’
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |     ^~~~~~~~~~~~~~~
+In file included from /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ with type ‘int(const char * restrict,  struct hostent * restrict,  char * restrict,  size_t,  struct hostent ** restrict,  int * restrict)’ {aka ‘int(const char * restrict,  struct hostent * restrict,  char * restrict,  long unsigned int,  struct hostent ** restrict,  int * restrict)’}
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
+
+
+
+#include <netdb.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef gethostbyname_r
+  cmakeRequireSymbol(0, &gethostbyname_r);
+#endif
+}
+
+int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_5_ARG failed with the following output:
+Change Dir: '/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/ninja/linux/x64/ninja -v cmTC_d8663
+[1/2] /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_d8663.dir/CheckPrototypeDefinition.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+FAILED: CMakeFiles/cmTC_d8663.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fno-omit-frame-pointer -ftls-model=initial-exec  -Wno-dangling-pointer -Wno-missing-profile -fdiagnostics-color=always -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_d8663.dir/CheckPrototypeDefinition.c.o -c /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:17: error: conflicting types for ‘gethostbyname_r’; have ‘struct hostent *(const char *, struct hostent *, char *, size_t,  int *)’ {aka ‘struct hostent *(const char *, struct hostent *, char *, long unsigned int,  int *)’}
+   14 | struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
+      |                 ^~~~~~~~~~~~~~~
+In file included from /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ with type ‘int(const char * restrict,  struct hostent * restrict,  char * restrict,  size_t,  struct hostent ** restrict,  int * restrict)’ {aka ‘int(const char * restrict,  struct hostent * restrict,  char * restrict,  long unsigned int,  struct hostent ** restrict,  int * restrict)’}
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘gethostbyname_r’:
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: error: ‘NULL’ undeclared (first use in this function)
+   15 |   return NULL;
+      |          ^~~~
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:2:1: note: ‘NULL’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+    1 | #include <netdb.h>
+  +++ |+#include <stddef.h>
+    2 | 
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: note: each undeclared identifier is reported only once for each function it appears in
+   15 |   return NULL;
+      |          ^~~~
+/home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
+   16 | }
+      | ^
+ninja: build stopped: subcommand failed.
+
+
+
+#include <netdb.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef gethostbyname_r
+  cmakeRequireSymbol(0, &gethostbyname_r);
+#endif
+}
+
+struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
+  return NULL;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+

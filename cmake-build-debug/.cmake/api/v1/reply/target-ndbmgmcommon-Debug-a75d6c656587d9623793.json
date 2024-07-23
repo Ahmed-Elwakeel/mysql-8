@@ -1,0 +1,305 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libndbmgmcommon.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_DEFINITIONS",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"storage/ndb/src/common/mgmcommon/CMakeLists.txt",
+			"CMakeLists.txt",
+			"storage/ndb/ndb_configure.cmake",
+			"storage/ndb/CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1549,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 1
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 174,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 243,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1782,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 569,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1553,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1564,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 3
+			},
+			{
+				"file" : 6,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 88,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 85,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1552,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1551,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1550,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 1580,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 176,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 1918,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 120,
+				"parent" : 25
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 110,
+				"parent" : 26
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1889,
+				"parent" : 3
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 220,
+				"parent" : 28
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 124,
+				"parent" : 29
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ndbmgmapi::@1b57032911eae5d65f0f"
+		}
+	],
+	"id" : "ndbmgmcommon::@ac875bbe8547e1da2154",
+	"name" : "ndbmgmcommon",
+	"nameOnDisk" : "libndbmgmcommon.a",
+	"paths" : 
+	{
+		"build" : "storage/ndb/src/common/mgmcommon",
+		"source" : "storage/ndb/src/common/mgmcommon"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/Config.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/ConfigInfo.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/ConfigObject.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/ConfigRetriever.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/ConfigSection.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/InitConfigFileParser.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/IPCConfig.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/DnsCache.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/mgmcommon/CMakeFiles/ndbmgmcommon_objlib.dir/thr_config.cpp.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

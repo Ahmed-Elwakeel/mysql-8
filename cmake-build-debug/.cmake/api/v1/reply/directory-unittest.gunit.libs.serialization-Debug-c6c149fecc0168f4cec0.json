@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "unittest/gunit/libs/serialization",
+		"source" : "unittest/gunit/libs/serialization"
+	}
+}

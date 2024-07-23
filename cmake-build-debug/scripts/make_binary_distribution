@@ -1,0 +1,1 @@
+cd /home/ahmedelwakeel/new_msql/mysql-8.3.0/cmake-build-debug && '/home/ahmedelwakeel/.cache/JetBrains/RemoteDev/dist/3d8b36b2566c3_CLion-241.14494.229/bin/cmake/linux/x64/bin/cpack' -G TGZ --config CPackConfig.cmake

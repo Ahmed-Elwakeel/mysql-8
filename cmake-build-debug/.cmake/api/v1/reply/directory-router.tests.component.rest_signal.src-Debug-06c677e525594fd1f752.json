@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "router/tests/component/rest_signal/src",
+		"source" : "router/tests/component/rest_signal/src"
+	}
+}

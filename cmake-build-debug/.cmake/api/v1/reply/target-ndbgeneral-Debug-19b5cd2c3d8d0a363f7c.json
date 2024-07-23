@@ -1,0 +1,542 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libndbgeneral.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_DEFINITIONS",
+			"TARGET_LINK_LIBRARIES",
+			"INCLUDE",
+			"MYSQL_CHECK_SSL",
+			"INCLUDE_DIRECTORIES",
+			"MYSQL_USE_BUNDLED_PROTOBUF",
+			"MYSQL_CHECK_PROTOBUF",
+			"MYSQL_USE_BUNDLED_EDITLINE",
+			"MYSQL_CHECK_EDITLINE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"storage/ndb/src/common/util/CMakeLists.txt",
+			"CMakeLists.txt",
+			"storage/ndb/ndb_configure.cmake",
+			"storage/ndb/CMakeLists.txt",
+			"cmake/ssl.cmake",
+			"cmake/os/Linux.cmake",
+			"cmake/protobuf.cmake",
+			"cmake/readline.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1549,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 1
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 174,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 243,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 1782,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 569,
+				"parent" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1553,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1564,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 3
+			},
+			{
+				"file" : 6,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 88,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 85,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1552,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1551,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1550,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 1580,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 176,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 1918,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 120,
+				"parent" : 26
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 110,
+				"parent" : 27
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1889,
+				"parent" : 3
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 220,
+				"parent" : 29
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 124,
+				"parent" : 30
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ndblogger::@cac1560275605e0803c6"
+		}
+	],
+	"id" : "ndbgeneral::@5828f8ae88ebb712709f",
+	"name" : "ndbgeneral",
+	"nameOnDisk" : "libndbgeneral.a",
+	"paths" : 
+	{
+		"build" : "storage/ndb/src/common/util",
+		"source" : "storage/ndb/src/common/util"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/BaseString.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/Bitmask.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/CharsetMap.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/CharsetMapImpl.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/Checksum.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ConfigValues.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/File.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/InputStream.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/LogBuffer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/NdbOut.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/NdbPack.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/NdbSocket.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/NdbSqlUtil.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/NodeCertificate.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_az31.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_ndbxfrm1.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_openssl3_compat.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_openssl_evp.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_zlib.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndbxfrm_file.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/OutputStream.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/OwnProcessInfo.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/Parser.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ProcessInfo.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/Properties.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/SimpleProperties.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/SocketAuthenticator.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/SocketClient.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/SocketServer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/TlsKeyManager.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/Vector.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/basename.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/decimal_utils.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/md5_hash.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_init.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_opts.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/ndb_rand.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/parse_mask.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/random.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/require.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/socket_io.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/storage/ndb/src/common/util/CMakeFiles/ndbgeneral_objlib.dir/version.cpp.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

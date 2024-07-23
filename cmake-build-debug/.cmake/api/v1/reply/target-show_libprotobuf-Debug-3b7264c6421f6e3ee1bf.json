@@ -1,0 +1,93 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_CUSTOM_TARGET",
+			"ADD_OBJDUMP_TARGET",
+			"include"
+		],
+		"files" : 
+		[
+			"cmake/fileutils.cmake",
+			"extra/protobuf/protobuf-3.19.4/cmake/libprotobuf.cmake",
+			"extra/protobuf/protobuf-3.19.4/cmake/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 277,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 111,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "libprotobuf::@ae262fda5401c4b9683d"
+		}
+	],
+	"id" : "show_libprotobuf::@ae262fda5401c4b9683d",
+	"name" : "show_libprotobuf",
+	"paths" : 
+	{
+		"build" : "extra/protobuf/protobuf-3.19.4/cmake",
+		"source" : "extra/protobuf/protobuf-3.19.4/cmake"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/protobuf/protobuf-3.19.4/cmake/CMakeFiles/show_libprotobuf",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/protobuf/protobuf-3.19.4/cmake/CMakeFiles/show_libprotobuf.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

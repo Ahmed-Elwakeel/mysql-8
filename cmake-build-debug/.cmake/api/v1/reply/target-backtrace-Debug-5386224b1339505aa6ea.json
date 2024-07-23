@@ -1,0 +1,181 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "archive_output_directory/libbacktrace.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"ADD_CONVENIENCE_LIBRARY",
+			"ADD_DEFINITIONS",
+			"INCLUDE"
+		],
+		"files" : 
+		[
+			"cmake/libutils.cmake",
+			"extra/libbacktrace/CMakeLists.txt",
+			"cmake/os/Linux.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 1
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 637,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 88,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 85,
+				"parent" : 5
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "backtrace_objlib::@72fe72e27e394ec41d76"
+		}
+	],
+	"id" : "backtrace::@72fe72e27e394ec41d76",
+	"name" : "backtrace",
+	"nameOnDisk" : "libbacktrace.a",
+	"paths" : 
+	{
+		"build" : "extra/libbacktrace",
+		"source" : "extra/libbacktrace"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/backtrace.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/dwarf.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/elf.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/fileline.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/mmap.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/mmapio.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/posix.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/print.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/simple.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/sort.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/sha9ae4f4a/state.c.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/extra/libbacktrace/CMakeFiles/backtrace_objlib.dir/src/stacktrace.cc.o",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
