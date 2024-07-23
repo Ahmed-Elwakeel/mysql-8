@@ -3143,10 +3143,14 @@ static void buf_page_make_young_if_needed(buf_page_t *bpage) {
   ut_ad(!mutex_own(&buf_pool_from_bpage(bpage)->LRU_list_mutex));
   ut_ad(bpage->buf_fix_count > 0);
   ut_a(buf_page_in_file(bpage));
-
+//  ## ADDED CODE ##
   if (buf_page_peek_if_too_old(bpage)) {
     buf_page_make_young(bpage);
   }
+//  if (buf_page_peek_if_too_old(bpage) && !fsp_is_undo_tablespace(bpage->space())) {
+//    buf_page_make_young(bpage);
+//  }
+  // ## ADDED CODE ##
 }
 
 #ifdef UNIV_DEBUG
