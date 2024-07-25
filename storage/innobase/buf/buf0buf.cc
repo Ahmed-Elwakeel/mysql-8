@@ -6810,6 +6810,28 @@ static void buf_print_io_instance(
           pool_info->io_cur, pool_info->unzip_sum, pool_info->unzip_cur);
 }
 
+void print_pages(buf_pool_t *buf_pool, FILE *file){
+  std::map<std::string, int> map;
+  mutex_enter(&buf_pool->LRU_list_mutex);
+
+  for (const buf_page_t* bpage = UT_LIST_GET_FIRST(buf_pool->LRU);
+       bpage != NULL;
+       bpage = UT_LIST_GET_NEXT(LRU, bpage)) {
+    map[bpage->m_space->name] +=1;
+
+  }
+  for (const auto& [key, value] : map){
+    if(value != 0) {
+      fprintf(file, "[%s] = %d; \n", key.c_str(), value);
+    }
+  }
+  mutex_exit(&buf_pool->LRU_list_mutex);
+
+  fprintf(file, " ------------------------------ ");
+
+  //### ADDED CODE ##
+}
+
 /** Prints info of the buffer i/o. */
 void buf_print_io(FILE *file) /*!< in/out: buffer where to print */
 {
@@ -6866,6 +6888,7 @@ void buf_print_io(FILE *file) /*!< in/out: buffer where to print */
     for (i = 0; i < srv_buf_pool_instances; i++) {
       fprintf(file, "---BUFFER POOL " ULINTPF "\n", i);
       buf_print_io_instance(&pool_info[i], file);
+      print_pages(buf_pool_from_array(i), file);
     }
   }
 
