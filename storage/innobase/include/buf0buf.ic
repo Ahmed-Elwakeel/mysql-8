@@ -819,7 +819,7 @@ static inline void buf_block_buf_fix_dec(
 /** Returns the buffer pool instance given a page id.
 @param[in]      page_id page id
 @return buffer pool */
-static inline buf_pool_t *buf_pool_get(const page_id_t &page_id) {
+static inline buf_pool_t *buf_pool_get(const page_id_t &page_id, bool is_read_ahead) {
   /* 2log of BUF_READ_AHEAD_AREA (64) */
   page_no_t ignored_page_no = page_id.page_no() >> 6;
 
@@ -827,35 +827,65 @@ static inline buf_pool_t *buf_pool_get(const page_id_t &page_id) {
 
   // ## ADDED CODE - undo-optim-2 ##
   // ------- 2 for undo (exclusively) and rest for others
-//    ulint  i = 0;
-//    if(fsp_is_undo_tablespace(page_id.space())){
-//      i = (id.hash() % 2) + (srv_buf_pool_instances - 2);
-//    }else{
-//      i = id.hash() % (srv_buf_pool_instances-2);
-//    }
+  //    ulint  i = 0;
+  //    if(fsp_is_undo_tablespace(page_id.space())){
+  //      i = (id.hash() % 2) + (srv_buf_pool_instances - 2);
+  //    }else{
+  //      i = id.hash() % (srv_buf_pool_instances-2);
+  //    }
   // ------- 1 for undo (exclusively) and rest for others
-//     ulint  i = 0;
-//     if(fsp_is_undo_tablespace(page_id.space())){
-//       i = srv_buf_pool_instances-1;
-//     }else{
-//       i = id.hash() % (srv_buf_pool_instances-1);
-//     }
+  //     ulint  i = 0;
+  //     if(fsp_is_undo_tablespace(page_id.space())){
+  //       i = srv_buf_pool_instances-1;
+  //     }else{
+  //       i = id.hash() % (srv_buf_pool_instances-1);
+  //     }
   //------- 7 and (1) only 1 for undo , all the buffers for all
-  //  ulint i = 0;
+  //  ulint i = 0;`
   //  if (fsp_is_undo_tablespace(page_id.space())) {
   //    i = srv_buf_pool_instances - 1;
   //  } else {
   //    i = id.hash() % srv_buf_pool_instances;
   //  }
 
-//
-//  ulint  i = 0;
-//  if(fsp_is_undo_tablespace(page_id.space())){
-//    i = (id.hash() % 2) + (srv_buf_pool_instances - 2);
-//  }else{
-//    i = id.hash() % srv_buf_pool_instances;
-//  }
+  //
+  //  ulint  i = 0;
+  //  if(fsp_is_undo_tablespace(page_id.space())){
+  //    i = (id.hash() % 2) + (srv_buf_pool_instances - 2);
+  //  }else{
+  //    i = id.hash() % srv_buf_pool_instances;
+  //  }
 
+  // -------1 for read_ahead rest for non_read_ahead
+//
+//  ulint target_pool_index = 10;
+//  bool isFoundG = false;
+//  for (ulint i = 0; i < srv_buf_pool_instances; ++i) {
+//    buf_pool_t *curr_buf_pool = buf_pool_from_array(i);
+//    bool isFound = (buf_page_hash_get(curr_buf_pool, page_id) != nullptr);
+//    if (isFound) {
+//      target_pool_index = i;
+//      isFoundG = true;
+//      break;
+//    }
+//  }
+//  ulint i = 0;
+//  if (isFoundG) {
+//    i = target_pool_index;
+//  } else {
+//    if (is_read_ahead) {
+//      i = srv_buf_pool_instances - 1;
+//    } else {
+////      buf_pool_t *last_buf_pool = buf_pool_from_array(i);
+////      double utilization = (static_cast<float>(UT_LIST_GET_LEN(last_buf_pool->LRU)) / static_cast<float>(last_buf_pool->curr_size)) * 100;
+////      if(utilization < 40){
+////        i = id.hash() % srv_buf_pool_instances;
+////      }else {
+//
+//        i = id.hash() % (srv_buf_pool_instances - 1);
+////      }
+//    }
+//  }
   // on adding the changes, comment the below line
   ulint i = id.hash() % srv_buf_pool_instances;
   //## ADDED CODE :- undo-optim-2 ##

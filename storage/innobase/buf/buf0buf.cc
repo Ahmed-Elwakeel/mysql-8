@@ -4833,12 +4833,12 @@ static void buf_page_init(buf_pool_t *buf_pool, const page_id_t &page_id,
 }
 
 buf_page_t *buf_page_init_for_read(ulint mode, const page_id_t &page_id,
-                                   const page_size_t &page_size, bool unzip) {
+                                   const page_size_t &page_size, bool unzip , bool is_read_ahead ) {
   buf_block_t *block;
   rw_lock_t *hash_lock;
   mtr_t mtr;
   void *data = nullptr;
-  buf_pool_t *buf_pool = buf_pool_get(page_id);
+  buf_pool_t *buf_pool = buf_pool_get(page_id , is_read_ahead);
 
   ut_ad(buf_pool);
 

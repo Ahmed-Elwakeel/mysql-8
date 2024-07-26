@@ -64,7 +64,7 @@ static constexpr uint32_t BUF_READ_AHEAD_PEND_LIMIT = 2;
 
 ulint buf_read_page_low(dberr_t *err, bool sync, ulint type, ulint mode,
                         const page_id_t &page_id, const page_size_t &page_size,
-                        bool unzip) {
+                        bool unzip , bool is_read_ahead) {
   buf_page_t *bpage;
 
   *err = DB_SUCCESS;
@@ -91,7 +91,7 @@ ulint buf_read_page_low(dberr_t *err, bool sync, ulint type, ulint mode,
   or is being dropped; if we succeed in initing the page in the buffer
   pool for read, then DISCARD cannot proceed until the read has
   completed */
-  bpage = buf_page_init_for_read(mode, page_id, page_size, unzip);
+  bpage = buf_page_init_for_read(mode, page_id, page_size, unzip, is_read_ahead);
 
   ut_a(bpage == nullptr || bpage->get_space()->id == page_id.space());
 
@@ -145,7 +145,7 @@ ulint buf_read_page_low(dberr_t *err, bool sync, ulint type, ulint mode,
       return (0);
     }
   }
-
+  bpage->is_read_ahead = is_read_ahead;
   return (1);
 }
 
@@ -553,7 +553,7 @@ ulint buf_read_ahead_linear(const page_id_t &page_id,
 
     if (!ibuf_bitmap_page(cur_page_id, page_size)) {
       count += buf_read_page_low(&err, false, IORequest::DO_NOT_WAKE, ibuf_mode,
-                                 cur_page_id, page_size, false);
+                                 cur_page_id, page_size, false , true);
 
       if (err == DB_TABLESPACE_DELETED) {
         ib::warn(ER_IB_MSG_142) << "linear readahead trying to"
