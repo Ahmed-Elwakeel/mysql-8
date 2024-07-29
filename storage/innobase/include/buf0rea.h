@@ -56,7 +56,7 @@ is never read into the pool, or if the tablespace does not exist or is being
 dropped */
 ulint buf_read_page_low(dberr_t *err, bool sync, ulint type, ulint mode,
                         const page_id_t &page_id, const page_size_t &page_size,
-                        bool unzip);
+                        bool unzip, bool is_read_ahead =false);
 
 /** High-level function which reads a page asynchronously from a file to the
 buffer buf_pool if it is not already there. Sets the io_fix flag and sets

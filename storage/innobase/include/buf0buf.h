@@ -899,7 +899,7 @@ and the lock released later.
 @param[in]      unzip                   true=request uncompressed page
 @return pointer to the block or NULL */
 buf_page_t *buf_page_init_for_read(ulint mode, const page_id_t &page_id,
-                                   const page_size_t &page_size, bool unzip);
+                                   const page_size_t &page_size, bool unzip , bool is_read_ahead = false);
 
 /** Completes an asynchronous read or write request of a file page to or from
 the buffer pool.
@@ -964,7 +964,7 @@ static inline buf_pool_t *buf_pool_from_block(
 /** Returns the buffer pool instance given a page id.
 @param[in]      page_id page id
 @return buffer pool */
-static inline buf_pool_t *buf_pool_get(const page_id_t &page_id);
+static inline buf_pool_t *buf_pool_get(const page_id_t &page_id , bool is_read_ahead =false);
 
 /** Returns the buffer pool instance given its array index
  @return buffer pool */
@@ -1176,6 +1176,7 @@ class buf_page_t {
         freed_page_clock(other.freed_page_clock),
         m_version(other.m_version),
         access_time(other.access_time),
+        is_read_ahead(other.is_read_ahead),
         m_dblwr_id(other.m_dblwr_id),
         old(other.old)
 #ifdef UNIV_DEBUG
@@ -1678,6 +1679,7 @@ class buf_page_t {
   /** Time of first access, or 0 if the block was never accessed in the
   buffer pool. Protected by block mutex */
   std::chrono::steady_clock::time_point access_time;
+  bool is_read_ahead = false;
 
  private:
   /** Double write instance ordinal value during writes. This is used
@@ -2275,299 +2277,299 @@ struct buf_buddy_stat_t {
 NOTE! The definition appears here only for other modules of this
 directory (buf) to see it. Do not use from outside! */
 
-struct buf_pool_t {
-  /** @name General fields */
-  /** @{ */
-  /** protects (de)allocation of chunks:
-   - changes to chunks, n_chunks are performed while holding this latch,
-   - reading buf_pool_should_madvise requires holding this latch for any
-     buf_pool_t
-   - writing to buf_pool_should_madvise requires holding these latches
-     for all buf_pool_t-s */
-  BufListMutex chunks_mutex;
+  struct buf_pool_t {
+    /** @name General fields */
+    /** @{ */
+    /** protects (de)allocation of chunks:
+     - changes to chunks, n_chunks are performed while holding this latch,
+     - reading buf_pool_should_madvise requires holding this latch for any
+       buf_pool_t
+     - writing to buf_pool_should_madvise requires holding these latches
+       for all buf_pool_t-s */
+    BufListMutex chunks_mutex;
 
-  /** LRU list mutex */
-  BufListMutex LRU_list_mutex;
+    /** LRU list mutex */
+    BufListMutex LRU_list_mutex;
 
-  /** free and withdraw list mutex */
-  BufListMutex free_list_mutex;
+    /** free and withdraw list mutex */
+    BufListMutex free_list_mutex;
 
-  /** buddy allocator mutex */
-  BufListMutex zip_free_mutex;
+    /** buddy allocator mutex */
+    BufListMutex zip_free_mutex;
 
-  /** zip_hash mutex */
-  BufListMutex zip_hash_mutex;
+    /** zip_hash mutex */
+    BufListMutex zip_hash_mutex;
 
-  /** Flush state protection mutex */
-  ib_mutex_t flush_state_mutex;
+    /** Flush state protection mutex */
+    ib_mutex_t flush_state_mutex;
 
-  /** Zip mutex of this buffer pool instance, protects compressed only pages (of
-  type buf_page_t, not buf_block_t */
-  BufPoolZipMutex zip_mutex;
+    /** Zip mutex of this buffer pool instance, protects compressed only pages (of
+    type buf_page_t, not buf_block_t */
+    BufPoolZipMutex zip_mutex;
 
-  /** Array index of this buffer pool instance */
-  ulint instance_no;
+    /** Array index of this buffer pool instance */
+    ulint instance_no;
 
-  /** Current pool size in bytes */
-  ulint curr_pool_size;
+    /** Current pool size in bytes */
+    ulint curr_pool_size;
 
-  /** Reserve this much of the buffer pool for "old" blocks */
-  ulint LRU_old_ratio;
-#ifdef UNIV_DEBUG
-  /** Number of frames allocated from the buffer pool to the buddy system.
-  Protected by zip_hash_mutex. */
-  ulint buddy_n_frames;
-#endif
+    /** Reserve this much of the buffer pool for "old" blocks */
+    ulint LRU_old_ratio;
+  #ifdef UNIV_DEBUG
+    /** Number of frames allocated from the buffer pool to the buddy system.
+    Protected by zip_hash_mutex. */
+    ulint buddy_n_frames;
+  #endif
 
-  /** Number of buffer pool chunks */
-  volatile ulint n_chunks;
+    /** Number of buffer pool chunks */
+    volatile ulint n_chunks;
 
-  /** New number of buffer pool chunks */
-  volatile ulint n_chunks_new;
+    /** New number of buffer pool chunks */
+    volatile ulint n_chunks_new;
 
-  /** buffer pool chunks */
-  buf_chunk_t *chunks;
+    /** buffer pool chunks */
+    buf_chunk_t *chunks;
 
-  /** old buffer pool chunks to be freed after resizing buffer pool */
-  buf_chunk_t *chunks_old;
+    /** old buffer pool chunks to be freed after resizing buffer pool */
+    buf_chunk_t *chunks_old;
 
-  /** Current pool size in pages */
-  ulint curr_size;
+    /** Current pool size in pages */
+    ulint curr_size;
+    ulint curr_read_ahead_size;
+    /** Previous pool size in pages */
+    ulint old_size;
 
-  /** Previous pool size in pages */
-  ulint old_size;
+    /** Size in pages of the area which the read-ahead algorithms read
+    if invoked */
+    page_no_t read_ahead_area;
 
-  /** Size in pages of the area which the read-ahead algorithms read
-  if invoked */
-  page_no_t read_ahead_area;
+    /** Hash table of buf_page_t or buf_block_t file pages, buf_page_in_file() ==
+    true, indexed by (space_id, offset).  page_hash is protected by an array of
+    mutexes. */
+    hash_table_t *page_hash;
 
-  /** Hash table of buf_page_t or buf_block_t file pages, buf_page_in_file() ==
-  true, indexed by (space_id, offset).  page_hash is protected by an array of
-  mutexes. */
-  hash_table_t *page_hash;
+    /** Hash table of buf_block_t blocks whose frames are allocated to the zip
+    buddy system, indexed by block->frame */
+    hash_table_t *zip_hash;
 
-  /** Hash table of buf_block_t blocks whose frames are allocated to the zip
-  buddy system, indexed by block->frame */
-  hash_table_t *zip_hash;
+    /** Number of pending read operations. Accessed atomically */
+    std::atomic<ulint> n_pend_reads;
 
-  /** Number of pending read operations. Accessed atomically */
-  std::atomic<ulint> n_pend_reads;
+    /** number of pending decompressions.  Accessed atomically. */
+    std::atomic<ulint> n_pend_unzip;
 
-  /** number of pending decompressions.  Accessed atomically. */
-  std::atomic<ulint> n_pend_unzip;
+    /** when buf_print_io was last time called. Accesses not protected. */
+    std::chrono::steady_clock::time_point last_printout_time;
 
-  /** when buf_print_io was last time called. Accesses not protected. */
-  std::chrono::steady_clock::time_point last_printout_time;
+    /** Statistics of buddy system, indexed by block size. Protected by zip_free
+    mutex, except for the used field, which is also accessed atomically */
+    buf_buddy_stat_t buddy_stat[BUF_BUDDY_SIZES_MAX + 1];
 
-  /** Statistics of buddy system, indexed by block size. Protected by zip_free
-  mutex, except for the used field, which is also accessed atomically */
-  buf_buddy_stat_t buddy_stat[BUF_BUDDY_SIZES_MAX + 1];
+    /** Current statistics */
+    buf_pool_stat_t stat;
 
-  /** Current statistics */
-  buf_pool_stat_t stat;
+    /** Old statistics */
+    buf_pool_stat_t old_stat;
 
-  /** Old statistics */
-  buf_pool_stat_t old_stat;
+    /** @} */
 
-  /** @} */
+    /** @name Page flushing algorithm fields */
 
-  /** @name Page flushing algorithm fields */
+    /** @{ */
 
-  /** @{ */
+    /** Mutex protecting the flush list access. This mutex protects flush_list,
+    flush_rbt and bpage::list pointers when the bpage is on flush_list. It also
+    protects writes to bpage::oldest_modification and flush_list_hp */
+    BufListMutex flush_list_mutex;
 
-  /** Mutex protecting the flush list access. This mutex protects flush_list,
-  flush_rbt and bpage::list pointers when the bpage is on flush_list. It also
-  protects writes to bpage::oldest_modification and flush_list_hp */
-  BufListMutex flush_list_mutex;
+    /** "Hazard pointer" used during scan of flush_list while doing flush list
+    batch.  Protected by flush_list_mutex */
+    FlushHp flush_hp;
 
-  /** "Hazard pointer" used during scan of flush_list while doing flush list
-  batch.  Protected by flush_list_mutex */
-  FlushHp flush_hp;
+    /** Entry pointer to scan the oldest page except for system temporary */
+    FlushHp oldest_hp;
 
-  /** Entry pointer to scan the oldest page except for system temporary */
-  FlushHp oldest_hp;
+    /** Base node of the modified block list */
+    UT_LIST_BASE_NODE_T(buf_page_t, list) flush_list;
 
-  /** Base node of the modified block list */
-  UT_LIST_BASE_NODE_T(buf_page_t, list) flush_list;
+    /** This is true when a flush of the given type is being initialized.
+    Protected by flush_state_mutex. */
+    bool init_flush[BUF_FLUSH_N_TYPES];
 
-  /** This is true when a flush of the given type is being initialized.
-  Protected by flush_state_mutex. */
-  bool init_flush[BUF_FLUSH_N_TYPES];
+    /** This is the number of pending writes in the given flush type.  Protected
+    by flush_state_mutex. */
+    std::array<size_t, BUF_FLUSH_N_TYPES> n_flush;
 
-  /** This is the number of pending writes in the given flush type.  Protected
-  by flush_state_mutex. */
-  std::array<size_t, BUF_FLUSH_N_TYPES> n_flush;
+    /** This is in the set state when there is no flush batch of the given type
+    running. Protected by flush_state_mutex. */
+    os_event_t no_flush[BUF_FLUSH_N_TYPES];
 
-  /** This is in the set state when there is no flush batch of the given type
-  running. Protected by flush_state_mutex. */
-  os_event_t no_flush[BUF_FLUSH_N_TYPES];
+    /** A red-black tree is used exclusively during recovery to speed up
+    insertions in the flush_list. This tree contains blocks in order of
+    oldest_modification LSN and is kept in sync with the flush_list.  Each
+    member of the tree MUST also be on the flush_list.  This tree is relevant
+    only in recovery and is set to NULL once the recovery is over.  Protected
+    by flush_list_mutex */
+    ib_rbt_t *flush_rbt;
 
-  /** A red-black tree is used exclusively during recovery to speed up
-  insertions in the flush_list. This tree contains blocks in order of
-  oldest_modification LSN and is kept in sync with the flush_list.  Each
-  member of the tree MUST also be on the flush_list.  This tree is relevant
-  only in recovery and is set to NULL once the recovery is over.  Protected
-  by flush_list_mutex */
-  ib_rbt_t *flush_rbt;
+    /** A sequence number used to count the number of buffer blocks removed from
+    the end of the LRU list; NOTE that this counter may wrap around at 4
+    billion! A thread is allowed to read this for heuristic purposes without
+    holding any mutex or latch. For non-heuristic purposes protected by
+    LRU_list_mutex */
+    ulint freed_page_clock;
 
-  /** A sequence number used to count the number of buffer blocks removed from
-  the end of the LRU list; NOTE that this counter may wrap around at 4
-  billion! A thread is allowed to read this for heuristic purposes without
-  holding any mutex or latch. For non-heuristic purposes protected by
-  LRU_list_mutex */
-  ulint freed_page_clock;
+    /** Set to false when an LRU scan for free block fails. This flag is used to
+    avoid repeated scans of LRU list when we know that there is no free block
+    available in the scan depth for eviction. Set to true whenever we flush a
+    batch from the buffer pool. Accessed protected by memory barriers. */
+    bool try_LRU_scan;
 
-  /** Set to false when an LRU scan for free block fails. This flag is used to
-  avoid repeated scans of LRU list when we know that there is no free block
-  available in the scan depth for eviction. Set to true whenever we flush a
-  batch from the buffer pool. Accessed protected by memory barriers. */
-  bool try_LRU_scan;
+    /** Page Tracking start LSN. */
+    lsn_t track_page_lsn;
 
-  /** Page Tracking start LSN. */
-  lsn_t track_page_lsn;
+    /** Check if the page modifications are tracked.
+    @return true if page modifications are tracked, false otherwise. */
+    bool is_tracking() { return track_page_lsn != LSN_MAX; }
 
-  /** Check if the page modifications are tracked.
-  @return true if page modifications are tracked, false otherwise. */
-  bool is_tracking() { return track_page_lsn != LSN_MAX; }
+    /** Maximum LSN for which write io has already started. */
+    lsn_t max_lsn_io;
 
-  /** Maximum LSN for which write io has already started. */
-  lsn_t max_lsn_io;
+    /** @} */
 
-  /** @} */
+    /** @name LRU replacement algorithm fields */
+    /** @{ */
 
-  /** @name LRU replacement algorithm fields */
-  /** @{ */
+    /** Base node of the free block list */
+    UT_LIST_BASE_NODE_T(buf_page_t, list) free;
 
-  /** Base node of the free block list */
-  UT_LIST_BASE_NODE_T(buf_page_t, list) free;
+    /** base node of the withdraw block list. It is only used during shrinking
+    buffer pool size, not to reuse the blocks will be removed.  Protected by
+    free_list_mutex */
+    UT_LIST_BASE_NODE_T(buf_page_t, list) withdraw;
 
-  /** base node of the withdraw block list. It is only used during shrinking
-  buffer pool size, not to reuse the blocks will be removed.  Protected by
-  free_list_mutex */
-  UT_LIST_BASE_NODE_T(buf_page_t, list) withdraw;
+    /** Target length of withdraw block list, when withdrawing */
+    ulint withdraw_target;
 
-  /** Target length of withdraw block list, when withdrawing */
-  ulint withdraw_target;
+    /** "hazard pointer" used during scan of LRU while doing
+    LRU list batch.  Protected by buf_pool::LRU_list_mutex */
+    LRUHp lru_hp;
 
-  /** "hazard pointer" used during scan of LRU while doing
-  LRU list batch.  Protected by buf_pool::LRU_list_mutex */
-  LRUHp lru_hp;
+    /** Iterator used to scan the LRU list when searching for
+    replaceable victim. Protected by buf_pool::LRU_list_mutex. */
+    LRUItr lru_scan_itr;
 
-  /** Iterator used to scan the LRU list when searching for
-  replaceable victim. Protected by buf_pool::LRU_list_mutex. */
-  LRUItr lru_scan_itr;
+    /** Iterator used to scan the LRU list when searching for
+    single page flushing victim.  Protected by buf_pool::LRU_list_mutex. */
+    LRUItr single_scan_itr;
 
-  /** Iterator used to scan the LRU list when searching for
-  single page flushing victim.  Protected by buf_pool::LRU_list_mutex. */
-  LRUItr single_scan_itr;
+    /** Base node of the LRU list */
+    UT_LIST_BASE_NODE_T(buf_page_t, LRU) LRU;
 
-  /** Base node of the LRU list */
-  UT_LIST_BASE_NODE_T(buf_page_t, LRU) LRU;
+    /** Pointer to the about LRU_old_ratio/BUF_LRU_OLD_RATIO_DIV oldest blocks in
+    the LRU list; NULL if LRU length less than BUF_LRU_OLD_MIN_LEN; NOTE: when
+    LRU_old != NULL, its length should always equal LRU_old_len */
+    buf_page_t *LRU_old;
 
-  /** Pointer to the about LRU_old_ratio/BUF_LRU_OLD_RATIO_DIV oldest blocks in
-  the LRU list; NULL if LRU length less than BUF_LRU_OLD_MIN_LEN; NOTE: when
-  LRU_old != NULL, its length should always equal LRU_old_len */
-  buf_page_t *LRU_old;
+    /** Length of the LRU list from the block to which LRU_old points onward,
+    including that block; see buf0lru.cc for the restrictions on this value; 0
+    if LRU_old == NULL; NOTE: LRU_old_len must be adjusted whenever LRU_old
+    shrinks or grows! */
+    ulint LRU_old_len;
 
-  /** Length of the LRU list from the block to which LRU_old points onward,
-  including that block; see buf0lru.cc for the restrictions on this value; 0
-  if LRU_old == NULL; NOTE: LRU_old_len must be adjusted whenever LRU_old
-  shrinks or grows! */
-  ulint LRU_old_len;
+    /** Base node of the unzip_LRU list. The list is protected by the
+    LRU_list_mutex. */
+    UT_LIST_BASE_NODE_T(buf_block_t, unzip_LRU) unzip_LRU;
 
-  /** Base node of the unzip_LRU list. The list is protected by the
-  LRU_list_mutex. */
-  UT_LIST_BASE_NODE_T(buf_block_t, unzip_LRU) unzip_LRU;
+    /** @} */
+    /** @name Buddy allocator fields
+    The buddy allocator is used for allocating compressed page
+    frames and buf_page_t descriptors of blocks that exist
+    in the buffer pool only in compressed form. */
+    /** @{ */
+  #if defined UNIV_DEBUG || defined UNIV_BUF_DEBUG
+    /** Unmodified compressed pages */
+    UT_LIST_BASE_NODE_T(buf_page_t, list) zip_clean;
+  #endif /* UNIV_DEBUG || UNIV_BUF_DEBUG */
 
-  /** @} */
-  /** @name Buddy allocator fields
-  The buddy allocator is used for allocating compressed page
-  frames and buf_page_t descriptors of blocks that exist
-  in the buffer pool only in compressed form. */
-  /** @{ */
-#if defined UNIV_DEBUG || defined UNIV_BUF_DEBUG
-  /** Unmodified compressed pages */
-  UT_LIST_BASE_NODE_T(buf_page_t, list) zip_clean;
-#endif /* UNIV_DEBUG || UNIV_BUF_DEBUG */
+    /** Buddy free lists */
+    UT_LIST_BASE_NODE_T(buf_buddy_free_t, list) zip_free[BUF_BUDDY_SIZES_MAX];
 
-  /** Buddy free lists */
-  UT_LIST_BASE_NODE_T(buf_buddy_free_t, list) zip_free[BUF_BUDDY_SIZES_MAX];
+    /** Sentinel records for buffer pool watches. Scanning the array is protected
+    by taking all page_hash latches in X. Updating or reading an individual
+    watch page is protected by a corresponding individual page_hash latch. */
+    buf_page_t *watch;
 
-  /** Sentinel records for buffer pool watches. Scanning the array is protected
-  by taking all page_hash latches in X. Updating or reading an individual
-  watch page is protected by a corresponding individual page_hash latch. */
-  buf_page_t *watch;
+    /** A wrapper for buf_pool_t::allocator.alocate_large which also advices the
+    OS that this chunk should not be dumped to a core file if that was requested.
+    Emits a warning to the log and disables @@global.core_file if advising was
+    requested but could not be performed, but still return true as the allocation
+    itself succeeded.
+    @param[in]      mem_size  number of bytes to allocate
+    @param[in,out]  chunk     mem and mem_pfx fields of this chunk will be updated
+                              to contain information about allocated memory region
+    @return true iff allocated successfully */
+    bool allocate_chunk(ulonglong mem_size, buf_chunk_t *chunk);
 
-  /** A wrapper for buf_pool_t::allocator.alocate_large which also advices the
-  OS that this chunk should not be dumped to a core file if that was requested.
-  Emits a warning to the log and disables @@global.core_file if advising was
-  requested but could not be performed, but still return true as the allocation
-  itself succeeded.
-  @param[in]      mem_size  number of bytes to allocate
-  @param[in,out]  chunk     mem and mem_pfx fields of this chunk will be updated
-                            to contain information about allocated memory region
-  @return true iff allocated successfully */
-  bool allocate_chunk(ulonglong mem_size, buf_chunk_t *chunk);
+    /** A wrapper for buf_pool_t::allocator.deallocate_large which also advices
+    the OS that this chunk can be dumped to a core file.
+    Emits a warning to the log and disables @@global.core_file if advising was
+    requested but could not be performed.
+    @param[in]  chunk   mem and mem_pfx fields of this chunk will be used to
+                        locate the memory region to free */
+    void deallocate_chunk(buf_chunk_t *chunk);
 
-  /** A wrapper for buf_pool_t::allocator.deallocate_large which also advices
-  the OS that this chunk can be dumped to a core file.
-  Emits a warning to the log and disables @@global.core_file if advising was
-  requested but could not be performed.
-  @param[in]  chunk   mem and mem_pfx fields of this chunk will be used to
-                      locate the memory region to free */
-  void deallocate_chunk(buf_chunk_t *chunk);
+    /** Advices the OS that all chunks in this buffer pool instance can be dumped
+    to a core file.
+    Emits a warning to the log if could not succeed.
+    @return true iff succeeded, false if no OS support or failed */
+    bool madvise_dump();
 
-  /** Advices the OS that all chunks in this buffer pool instance can be dumped
-  to a core file.
-  Emits a warning to the log if could not succeed.
-  @return true iff succeeded, false if no OS support or failed */
-  bool madvise_dump();
+    /** Advices the OS that all chunks in this buffer pool instance should not
+    be dumped to a core file.
+    Emits a warning to the log if could not succeed.
+    @return true iff succeeded, false if no OS support or failed */
+    bool madvise_dont_dump();
 
-  /** Advices the OS that all chunks in this buffer pool instance should not
-  be dumped to a core file.
-  Emits a warning to the log if could not succeed.
-  @return true iff succeeded, false if no OS support or failed */
-  bool madvise_dont_dump();
-
-  /** Checks if the batch is running, which is basically equivalent to
-  !os_event_is_set(no_flush[type]) if you hold flush_state_mutex.
-  It is used as source of truth to know when to set or reset this event.
-  Caller should hold flush_state_mutex.
-  @param[in]  flush_type  The type of the flush we are interested in
-  @return Should no_flush[type] be in the "unset" state? */
-  bool is_flushing(buf_flush_t flush_type) const {
-    ut_ad(mutex_own(&flush_state_mutex));
-    return init_flush[flush_type] || 0 < n_flush[flush_type];
-  }
-
-#ifndef UNIV_HOTBACKUP
-  /** Executes change() which modifies fields protected by flush_state_mutex.
-  If it caused a change to is_flushing(flush_type) then it sets or resets the
-  no_flush[flush_type] to keep it in sync.
-  @param[in]  flush_type  The type of the flush this change of state concerns
-  @param[in]  change      A callback to execute within flush_state_mutex
-  */
-  template <typename F>
-  void change_flush_state(buf_flush_t flush_type, F &&change) {
-    mutex_enter(&flush_state_mutex);
-    const bool was_set = !is_flushing(flush_type);
-    ut_ad(was_set == os_event_is_set(no_flush[flush_type]));
-    std::forward<F>(change)();
-    const bool should_be_set = !is_flushing(flush_type);
-    if (was_set && !should_be_set) {
-      os_event_reset(no_flush[flush_type]);
-    } else if (!was_set && should_be_set) {
-      os_event_set(no_flush[flush_type]);
+    /** Checks if the batch is running, which is basically equivalent to
+    !os_event_is_set(no_flush[type]) if you hold flush_state_mutex.
+    It is used as source of truth to know when to set or reset this event.
+    Caller should hold flush_state_mutex.
+    @param[in]  flush_type  The type of the flush we are interested in
+    @return Should no_flush[type] be in the "unset" state? */
+    bool is_flushing(buf_flush_t flush_type) const {
+      ut_ad(mutex_own(&flush_state_mutex));
+      return init_flush[flush_type] || 0 < n_flush[flush_type];
     }
-    ut_ad(should_be_set == os_event_is_set(no_flush[flush_type]));
-    mutex_exit(&flush_state_mutex);
-  }
-#endif /*! UNIV_HOTBACKUP */
 
-  static_assert(BUF_BUDDY_LOW <= UNIV_ZIP_SIZE_MIN,
-                "BUF_BUDDY_LOW > UNIV_ZIP_SIZE_MIN");
-  /** @} */
-};
+  #ifndef UNIV_HOTBACKUP
+    /** Executes change() which modifies fields protected by flush_state_mutex.
+    If it caused a change to is_flushing(flush_type) then it sets or resets the
+    no_flush[flush_type] to keep it in sync.
+    @param[in]  flush_type  The type of the flush this change of state concerns
+    @param[in]  change      A callback to execute within flush_state_mutex
+    */
+    template <typename F>
+    void change_flush_state(buf_flush_t flush_type, F &&change) {
+      mutex_enter(&flush_state_mutex);
+      const bool was_set = !is_flushing(flush_type);
+      ut_ad(was_set == os_event_is_set(no_flush[flush_type]));
+      std::forward<F>(change)();
+      const bool should_be_set = !is_flushing(flush_type);
+      if (was_set && !should_be_set) {
+        os_event_reset(no_flush[flush_type]);
+      } else if (!was_set && should_be_set) {
+        os_event_set(no_flush[flush_type]);
+      }
+      ut_ad(should_be_set == os_event_is_set(no_flush[flush_type]));
+      mutex_exit(&flush_state_mutex);
+    }
+  #endif /*! UNIV_HOTBACKUP */
+
+    static_assert(BUF_BUDDY_LOW <= UNIV_ZIP_SIZE_MIN,
+                  "BUF_BUDDY_LOW > UNIV_ZIP_SIZE_MIN");
+    /** @} */
+  };
 
 /** Print the given buf_pool_t object.
 @param[in,out]  out             the output stream

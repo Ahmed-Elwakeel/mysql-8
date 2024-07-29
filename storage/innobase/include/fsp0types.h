@@ -190,6 +190,19 @@ the DICT_TF_COMPACT bit set.
 @return true if valid, false if not */
 [[nodiscard]] bool fsp_flags_is_valid(uint32_t flags);
 
+// ## ADDED CODE :- undo-optim-2 (uncomment the following and comment the one in fso0fsp.h ##
+/** Check whether a space id is an undo tablespace ID
+Undo tablespaces have space_id's starting 1 less than the redo logs.
+They are numbered down from this.  Since rseg_id=0 always refers to the
+system tablespace, undo_space_num values start at 1.  The current limit
+is 127. The translation from an undo_space_num is:
+   undo space_id = log_first_space_id - undo_space_num
+@param[in]      space_id        space id to check
+@return true if it is undo tablespace else false. */
+bool fsp_is_undo_tablespace(space_id_t space_id);
+// ## ADDED CODE :- undo-optim-2 ##
+
+
 /** Check if tablespace is system temporary.
 @param[in]      space_id        tablespace ID
 @return true if tablespace is system temporary. */

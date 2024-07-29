@@ -3143,10 +3143,14 @@ static void buf_page_make_young_if_needed(buf_page_t *bpage) {
   ut_ad(!mutex_own(&buf_pool_from_bpage(bpage)->LRU_list_mutex));
   ut_ad(bpage->buf_fix_count > 0);
   ut_a(buf_page_in_file(bpage));
-
+//  ## ADDED CODE ##
   if (buf_page_peek_if_too_old(bpage)) {
     buf_page_make_young(bpage);
   }
+//  if (buf_page_peek_if_too_old(bpage) && !fsp_is_undo_tablespace(bpage->space())) {
+//    buf_page_make_young(bpage);
+//  }
+  // ## ADDED CODE ##
 }
 
 #ifdef UNIV_DEBUG
@@ -4829,12 +4833,12 @@ static void buf_page_init(buf_pool_t *buf_pool, const page_id_t &page_id,
 }
 
 buf_page_t *buf_page_init_for_read(ulint mode, const page_id_t &page_id,
-                                   const page_size_t &page_size, bool unzip) {
+                                   const page_size_t &page_size, bool unzip , bool is_read_ahead ) {
   buf_block_t *block;
   rw_lock_t *hash_lock;
   mtr_t mtr;
   void *data = nullptr;
-  buf_pool_t *buf_pool = buf_pool_get(page_id);
+  buf_pool_t *buf_pool = buf_pool_get(page_id , is_read_ahead);
 
   ut_ad(buf_pool);
 
@@ -6806,6 +6810,28 @@ static void buf_print_io_instance(
           pool_info->io_cur, pool_info->unzip_sum, pool_info->unzip_cur);
 }
 
+void print_pages(buf_pool_t *buf_pool, FILE *file){
+  std::map<std::string, int> map;
+  mutex_enter(&buf_pool->LRU_list_mutex);
+
+  for (const buf_page_t* bpage = UT_LIST_GET_FIRST(buf_pool->LRU);
+       bpage != NULL;
+       bpage = UT_LIST_GET_NEXT(LRU, bpage)) {
+    map[bpage->m_space->name] +=1;
+
+  }
+  for (const auto& [key, value] : map){
+    if(value != 0) {
+      fprintf(file, "[%s] = %d; \n", key.c_str(), value);
+    }
+  }
+  mutex_exit(&buf_pool->LRU_list_mutex);
+
+  fprintf(file, " ------------------------------ ");
+
+  //### ADDED CODE ##
+}
+
 /** Prints info of the buffer i/o. */
 void buf_print_io(FILE *file) /*!< in/out: buffer where to print */
 {
@@ -6862,6 +6888,7 @@ void buf_print_io(FILE *file) /*!< in/out: buffer where to print */
     for (i = 0; i < srv_buf_pool_instances; i++) {
       fprintf(file, "---BUFFER POOL " ULINTPF "\n", i);
       buf_print_io_instance(&pool_info[i], file);
+      print_pages(buf_pool_from_array(i), file);
     }
   }
 
